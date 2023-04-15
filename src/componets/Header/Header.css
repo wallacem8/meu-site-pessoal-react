@@ -1,0 +1,18 @@
+.img-avatar {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+  }
+  
+  header {
+    background-color: #3E848C;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .titulo-principal {
+    color: #ffffff;
+    font-size: 28pt;
+    
+  }
+  

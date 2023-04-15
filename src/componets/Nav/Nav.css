@@ -1,0 +1,27 @@
+nav {
+    background-color: #C4EEF2;
+    padding: 15px;
+    text-align: center;    
+  }
+  
+  
+  nav ul li {
+    display: inline;
+    margin: 60px;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    color: #A67458;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 700px) {
+    nav ul li {
+        margin: 18px;
+        display: inline-block;
+    }    
+  }
+  
+  

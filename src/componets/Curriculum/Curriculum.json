@@ -1,0 +1,54 @@
+{
+    "resumo": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia sit consequuntur accusamus hic, officiis voluptas tenetur incidunt vero, atque maxime nam itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur quia laboriosam, eum assumenda voluptatum. Cum iure ab ea magnam voluptatem enim optio voluptas nihil illo et? Voluptatem, fuga ipsa!",
+    "experienciaAcademica": [
+        {
+            "titulo": "Analise e desenvolvimento de sistemas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2022",
+            "dataFim": "2023"
+        },
+        
+        {
+            "titulo": "Analise e desenvolvimento de sistemas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2022",
+            "dataFim": "2023"
+        },
+
+        {
+            "titulo": "Analise e desenvolvimento de sistemas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2022",
+            "dataFim": "2023"
+        },
+
+        {
+            "titulo": "Analise e desenvolvimento de sistemas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2022",
+            "dataFim": "2023"
+        }
+    ],
+    "experienciaProfissinal": [
+        {
+            "titulo": "Operador Comerial - Lojas Americanas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2015",
+            "dataFim": "2019"
+        },
+
+        {
+            "titulo": "Operador Comerial - Lojas Americanas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2015",
+            "dataFim": "2019"
+        },
+
+        {
+            "titulo": "Operador Comerial - Lojas Americanas",
+            "descricao": "lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quae. Earum nostrum dolorem, amet id veritatis mollitia",
+            "dataInicio": "2015",
+            "dataFim": "2019"
+        }
+    ]
+}
