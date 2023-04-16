@@ -1,7 +1,8 @@
 .item-portfolio {
     display: inline-block;
-    border: 1px solid #3E848C ;
-    border-radius: 15px;
+    border: 3px solid #3E848C ;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
     margin: 100px;
 }
 
@@ -9,6 +10,9 @@
     background-color: #3E848C;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
+    margin: 5px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
 }
 
 img {
@@ -19,7 +23,7 @@ img {
 
 @media only screen and (max-width: 480px) {
       img {
-        width: 180px;
-        height: 150px;
+        width: 210px;
+        height: 180px;
       }
   }
