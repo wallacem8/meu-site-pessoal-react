@@ -14,7 +14,7 @@ function Curriculum() {
         <ul>
             {data.experienciaAcademica.map((item, index) => (
                 <li key={index}>
-                    ({item.dataInicio} - {item.dataFim}) {item.titulo};
+                    ({item.dataInicio} - {item.dataFim}) {item.titulo}
                 </li>
             ))}
         </ul>
@@ -24,7 +24,7 @@ function Curriculum() {
         <ul>
             {data.experienciaProfissinal.map((item, index) => (
                 <li key={index}>
-                    ({item.dataInicio} - {item.dataFim}) {item.titulo};
+                    ({item.dataInicio} - {item.dataFim}) {item.titulo}
                 </li>
             ))}
         </ul>
