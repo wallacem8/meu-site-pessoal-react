@@ -3,7 +3,7 @@ import React from "react";
 import "./portfolio.css";
 
 import ItemPortfolio from "../ItemPortfolio/ItemPortfolio";
-import portfolio from "./Portfolio.json";
+import portfolio from "./db.json";
 
 function Portfolio() {
 
