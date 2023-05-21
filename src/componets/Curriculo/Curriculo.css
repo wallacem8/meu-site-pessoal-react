@@ -12,6 +12,10 @@ section {
     margin-left: 12px;
   }
   
+  h2 {
+    color: #A67458;
+  }
+
   .card {
     color: #ffffff;
   }
