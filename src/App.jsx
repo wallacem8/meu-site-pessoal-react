@@ -1,23 +1,23 @@
 import React from "react";
+
+import api from "./api";
+
 import "./App.css";
 
-import api from "./services/api";
+import BarraNavegacao from "./componets/BarraNavegacao/BarraNavegacao";
+import Cabecalho from "./componets/Cabecalho/Cabecalho";
+import Rodape from "./componets/Rodape/Rodape";
 
-import Header from "./componets/Header/Header";
-import Nav from "./componets/Nav/Nav";
-import Footer from "./componets/Footer/Footer";
-
-import Curriculum from "./componets/Curriculum/Curriculum";
+import Curriculo from "./componets/Curriculo/Curriculo";
 import Portfolio from "./componets/Portfolio/Portfolio";
-import Contacts from "./componets/Contact/Contact";
+import Contato from "./componets/Contato/Contato";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
 function App() {
   const [informacoes, setInformacoes] = React.useState({});
-  const [curriculum, setCurriculum] = React.useState({});
-  const [portfolio, setPortfolio] = React.useState({});
+  const [curriculo, setCurriculo] = React.useState({});
+  const [portfolio, setPortfolio] = React.useState([]);
 
   const fetchDados = async () => {
     try {
@@ -31,7 +31,7 @@ function App() {
       const experienciaAcademica = await api.get(`/experiencias?tipo=academico`);
       const experienciaProfissional = await api.get(`/experiencias?tipo=profissional`);
 
-      setCurriculum({
+      setCurriculo({
         resumo: informacao.data.resumo,
         experienciaAcademica: experienciaAcademica.data,
         experienciaProfissional: experienciaProfissional.data
@@ -39,8 +39,9 @@ function App() {
 
       const portfolio = await api.get(`/portfolio`);
       setPortfolio(portfolio.data);
+
     } catch (error) {
-      console.log('Erro ao buscar dados:')
+      console.error('Erro ao buscar dados:', error);
     }
   };
 
@@ -50,22 +51,21 @@ function App() {
 
   return (
     <>
-      <Header></Header>
+      <Cabecalho informacoes={informacoes}></Cabecalho>
 
       <BrowserRouter>
-        <Nav></Nav>
+        <BarraNavegacao></BarraNavegacao>
         <Routes>
-          <Route index element={<Curriculum curriculum={curriculum} />} />
+          <Route index element={<Curriculo curriculo={curriculo} />} />
           <Route path="portfolio" element={<Portfolio portfolio={portfolio} />} />
-          <Route path="contacts" element={<Contacts />} />
+          <Route path="contato" element={<Contato />} />
         </Routes>
       </BrowserRouter>
 
-      <Footer></Footer>
-
+      <Rodape></Rodape>
 
     </>
   )
-};
+}
 
 export default App;
